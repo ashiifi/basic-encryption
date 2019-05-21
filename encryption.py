@@ -22,11 +22,11 @@ def encryption(S, n):
 				encrypted.append(letters[(letters.index(initial[a])+n)%26])
 			a = a + 1
 	T = "".join(encrypted)
-	W = T+str(n)
+	W = T+str(n) #ouputs the encrypted string as well as the n attached to the end
 
 	return W
 
-def decryption(W):
+def decryption(W): #takes in W which is an encrypted string and decrypts
 	letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 	numbers = ['1','2','3','4','5','6','7','8','9','0','-']
 	initial = []
@@ -48,8 +48,7 @@ def decryption(W):
 			elif initial[a] in letters:
 				decrypted.append(letters[(letters.index(initial[a])-int(n))%26])
 			a = a + 1
-	b = decrypted[:len(decrypted)]
-	d = "".join(b)
+	d = "".join(decrypted)
 	return d
 
 def main():
