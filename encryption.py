@@ -51,13 +51,23 @@ def decryption(W): #takes in W which is an encrypted string and decrypts
 	d = "".join(decrypted)
 	return d
 
-def main():
-	S = "hello world"
-	n = 1
-	#print(encryption("hello world", 1))
-	W = encryption(S, n)
-	print(S)
-	print(W)
-	print(decryption(W))
+def main(): 
+	print("\nAre you looking to encrypt or decrypt? \n\nType exactly as shown: encrypt OR decrypt")
+	to_run = str(input())
+	if to_run == "encrypt":
+		print('Word to encrypt:')
+		S = str(input())
+		print('\nProvide n:')
+		n = int(input())
+		W = encryption(S, n)
+		print('\nEncrypted phrase:')
+		print(W)
+	elif to_run == "decrypt":	
+		print('Encrypted phrase to decrypt(with n at end):')
+		W = str(input())
+		print("\nDecrypted word:")
+		print(decryption(W))
+	else:
+		print('unknown method entered')
 
 main()
