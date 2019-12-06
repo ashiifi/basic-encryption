@@ -1,6 +1,12 @@
 # basic-encryption
+<<<<<<< Updated upstream
 A very basic sample of encryption
 run the encryption.py file
+=======
+A basic sample of encryption.
+
+Run the encryption.py file
+>>>>>>> Stashed changes
 
 encryption(S,n) takes in a string and a number. It then moves each letter in the string
 by n amount of times through the alphabet. In this way, 'encrypting' the string
