@@ -1,5 +1,5 @@
 # basic-encryption
-A very basic sample of encryption.
+A basic sample of encryption.
 
 Run the encryption.py file
 
